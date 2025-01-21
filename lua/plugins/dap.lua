@@ -3,6 +3,7 @@ return {
     "mfussenegger/nvim-dap",
     dependencies = {
       "leoluz/nvim-dap-go",
+      "mfussenegger/nvim-dap-python",
       "rcarriga/nvim-dap-ui",
       "theHamsta/nvim-dap-virtual-text",
       "nvim-neotest/nvim-nio",
@@ -13,7 +14,9 @@ return {
       local ui = require("dapui")
       require("dapui").setup()
       require("dap-go").setup()
-
+      require("dap-python").setup("python3")
+      -- If using the above, then `python3 -m debugpy --version`
+      -- must work in the shell
       require("nvim-dap-virtual-text").setup({
         -- This just tries to mitigate the chance that I leak tokens here. Probably won't stop it from happening...
         display_callback = function(variable)
