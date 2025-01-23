@@ -13,6 +13,10 @@ return {
 
 		lspconfig.rust_analyzer.setup({
 			capabilities = capabilities,
+    })
+
+		lspconfig.ocaml_lsp.setup({
+			capabilities = capabilities,
 		})
 
 		lspconfig.pyright.setup({
