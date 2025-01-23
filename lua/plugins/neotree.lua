@@ -2,7 +2,7 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
   keys = {
-    {"<C-n>", ":Neotree filesystem reveal right<CR>", desc = "Open file viewer"}
+    {"<C-n>", ":Neotree toggle filesystem reveal right<CR>", desc = "Open file viewer"}
   },
     dependencies = {
       "nvim-lua/plenary.nvim",
