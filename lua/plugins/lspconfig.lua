@@ -11,13 +11,21 @@ return {
 			capabilities = capabilities,
 		})
 
+		lspconfig.templ.setup({
+			capabilities = capabilities,
+		})
+
+		lspconfig.svelte.setup({
+			capabilities = capabilities,
+		})
+
+		lspconfig.ts_ls.setup({
+			capabilities = capabilities,
+		})
+
 		lspconfig.rust_analyzer.setup({
 			capabilities = capabilities,
     })
-
-		-- lspconfig.ocaml_lsp.setup({
-		-- 	capabilities = capabilities,
-		-- })
 
 		lspconfig.pyright.setup({
 			capabilities = capabilities,

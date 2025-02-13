@@ -8,7 +8,7 @@ return {
     {"<leader>T", ":TestFile<CR>"},
     {"<leader>a", ":TestSuite<CR>"},
     {"<leader>l", ":TestLast<CR>"},
-    {"<leader>g", ":TestVisit<CR>"},
+    -- {"<leader>g", ":TestVisit<CR>"},
   },
   config = function()
     vim.cmd("let test#strategy = 'vimux'")
