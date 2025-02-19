@@ -50,10 +50,9 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
-          --{ name = "cody" }, -- Do not use AI, please.
 					{ name = "luasnip" },
 				}, {
-					{ name = "buffer" },
+					{ name = "buffer"  },
 				}),
 			})
 		end,
