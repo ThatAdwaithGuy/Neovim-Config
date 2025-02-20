@@ -1,3 +1,6 @@
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "#1e1e2e" })
+
+
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
@@ -23,11 +26,9 @@ return {
 					end,
 				},
 				window = {
-					--completion = {
-					--	winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
-					--	col_offset = -3,
-					--	side_padding = 0,
-					--},
+					completion = {
+						winhighlight = "Normal:Pmenu",
+					},
 				},
 				formatting = {
 					fields = { "kind", "abbr", "menu" },
