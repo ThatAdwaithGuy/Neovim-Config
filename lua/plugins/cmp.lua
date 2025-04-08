@@ -1,6 +1,4 @@
 vim.api.nvim_set_hl(0, "Pmenu", { bg = "#1e1e2e" })
-
-
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
@@ -8,7 +6,7 @@ return {
 	{
 		"L3MON4D3/LuaSnip",
 		dependencies = {
-      "onsails/lspkind.nvim",
+			"onsails/lspkind.nvim",
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
 		},
@@ -51,10 +49,10 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
-          --{ name = "cody" }, -- Do not use AI, please.
 					{ name = "luasnip" },
+					{ name = "buffer", option = { keyword_length = 5, keyword_pattern = [[\k\+]] } },
 				}, {
-					{ name = "buffer" },
+					{ name = "buffer", option = { keyword_length = 5, keyword_pattern = [[\k\+]] } },
 				}),
 			})
 		end,
